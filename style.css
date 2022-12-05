@@ -74,6 +74,30 @@ i{
 .mobile{
     display: none;
 }
+.officers{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.officers .thing{
+    width: 20%;
+    margin: 10px;
+    border: 2px solid #BBA166;
+    padding: 5px;
+    padding-bottom: 10px;
+    transition: 0.45s;
+}
+.officers .thing:hover{
+    transition: 0.45s;
+    transform: scale(1.05);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.officers .thing img{
+    width: 100%;
+    border-radius: 2px;
+}
 @media screen and (max-width: 768px){
     .computer{
         display: none;
