@@ -65,11 +65,33 @@ a{
     color: #BBA166;
 }
 .logo{
-    width: 500px;
+    width: 400px;
+}
+/* arrow going up and down animation */
+@keyframes arrow {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 i{
     font-size: 50px;
     margin: 10px;
+    transition: 0.45s;
+}
+.arrow-down{
+    animation: arrow 2s infinite;
+}
+i:hover{
+    transition: 0.45s;
+    transform: scale(1.1);
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .mobile{
     display: none;
@@ -82,6 +104,7 @@ i{
 }
 .officers .thing{
     width: 20%;
+    height: 95%;
     margin: 10px;
     border: 2px solid #BBA166;
     padding: 5px;
@@ -95,8 +118,10 @@ i{
     margin-right: 20px;
 }
 .officers .thing img{
-    width: 100%;
+    width: 95%;
     border-radius: 2px;
+    border: 2px solid #BBA166;
+    margin-bottom: 10px;
 }
 @media screen and (max-width: 768px){
     .computer{
@@ -138,5 +163,46 @@ i{
         justify-content: center;
         align-items: center;
         border: 2px solid #BBA166;
+    }
+}
+iframe{
+    width: 40vw;
+    height: 50vh;
+    margin-bottom: 20px;    
+}
+center h1{
+    margin-top: 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #BBA166;
+}
+.thing a{
+    color: #BBA166;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid #BBA166;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: 0.45s;
+}
+.thing a:hover{
+    color: black;
+    background-color: #BBA166;
+    transition: 0.45s;
+}
+@media screen and (max-width: 768px){
+    .logo{
+        width: 60%;
+    }
+    iframe{
+        width: 80vw;
+        height: 50vh;
+    }
+    center h1{
+        margin-top: 10px;
+        font-size: 30px;
+        color: #BBA166;
+        margin-bottom: 10px;
     }
 }
